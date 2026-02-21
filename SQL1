@@ -2,3 +2,10 @@
 SELECT * 
 FROM EMP
 WHERE SALARY > 50000;
+
+# Get employees from CSE department.
+SELECT *
+FROM EMP
+WHERE DEPT = 'CSE' ;
+
+#
