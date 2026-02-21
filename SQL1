@@ -8,4 +8,7 @@ SELECT *
 FROM EMP
 WHERE DEPT = 'CSE' ;
 
-#
+# Sort employees by salary in descending order.
+SELECT * 
+FROM EMP
+ORDER BY SALARY DESC;
