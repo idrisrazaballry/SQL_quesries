@@ -1,0 +1,4 @@
+# Get employees with salary > 50000.
+SELECT * 
+FROM EMP
+WHERE SALARY > 50000;
