@@ -12,3 +12,7 @@ WHERE DEPT = 'CSE' ;
 SELECT * 
 FROM EMP
 ORDER BY SALARY DESC;
+
+# Count total employees.
+SELECT COUNT(*)
+FROM EMP;
