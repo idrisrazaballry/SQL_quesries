@@ -9,3 +9,10 @@ GROUP BY department;
 SELECT department, AVG(salary)
 FROM EMPLOYEE
 GROUP BY department;
+
+
+# Departments having more than 5 employees.
+SELECT department, COUNT(*)
+FROM EMPLOYEE
+GROUP BY department
+HAVING COUNT(*) > 5;
