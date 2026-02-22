@@ -1,6 +1,11 @@
 # Find total salary per department.
+
 SELECT department, SUM(salary)
 FROM EMPLOYEE
 GROUP BY department;
 
 
+# Find average salary per department.
+SELECT department, AVG(salary)
+FROM EMPLOYEE
+GROUP BY department;
