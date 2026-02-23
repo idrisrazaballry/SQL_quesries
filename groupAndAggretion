@@ -16,3 +16,15 @@ SELECT department, COUNT(*)
 FROM EMPLOYEE
 GROUP BY department
 HAVING COUNT(*) > 5;
+
+
+# Find highest salary in each department.
+SELECT department, MAX(salary)
+FROM EMPLOYEE
+GROUP BY department;
+
+
+# Find employee count hired after 2023.
+SELECT COUNT(*)
+FROM EMPLOYEE
+WHERE joining_date > '2023-01-01';
