@@ -2,3 +2,9 @@
 SELECT *
 FROM EMPLOYEE
 WHERE salary = (SELECT MAX(salary) FROM EMPLOYEE);
+
+
+# Find second highest salary (Method 1 – Subquery)
+SELECT MAX(salary)
+FROM EMPLOYEE
+WHERE salary < (SELECT MAX(salary) FROM EMPLOYEE);
