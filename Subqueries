@@ -1,1 +1,4 @@
-
+# Find employee with highest salary.
+SELECT *
+FROM EMPLOYEE
+WHERE salary = (SELECT MAX(salary) FROM EMPLOYEE);
