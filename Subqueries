@@ -27,10 +27,3 @@ WHERE salary > (
     FROM EMPLOYEE
     WHERE department = e.department
 );
-
-werghjkl;'
-';lkjgfdssdfghjkl;'
-
-';lkjhgffghjkl;'
-fghjkl;'
-';lkhkl;'
