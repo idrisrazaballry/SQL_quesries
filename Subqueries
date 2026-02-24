@@ -19,3 +19,11 @@ FROM (
 WHERE rnk = 2;
 
 
+Find employees earning more than department average.
+SELECT *
+FROM EMPLOYEE e
+WHERE salary > (
+    SELECT AVG(salary)
+    FROM EMPLOYEE
+    WHERE department = e.department
+);
