@@ -2,3 +2,9 @@
 SELECT * FROM EMP
 WHERE JOB="CLERK" AND SAL>1500;
 
+
+# Details of emmp along with annual salary if they are working in dept 30
+SELECT ENAME, SAL, SAL*12 AS ANNUALSAL 
+FROM EMP
+WHERE DEPT=30;
+
