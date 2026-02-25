@@ -8,3 +8,8 @@ SELECT ENAME, SAL, SAL*12 AS ANNUALSAL
 FROM EMP
 WHERE DEPT=30;
 
+
+# Details of an emp who working in dept 30 OR as an analyst
+SELECT * 
+FROM EMP
+WHERE DEPT=30 OR JOB = 'ANALYST';
