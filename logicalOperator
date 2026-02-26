@@ -19,3 +19,6 @@ WHERE DEPT=30 OR JOB = 'ANALYST';
 # Details of emp who working as clerk or manager or salesman
 SELECT * FROM EMP
 WHERE JOB ='CLERK' AND JOB='MANAGER' OR JOB='SALESMAN' ;
+
+
+# 
