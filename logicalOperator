@@ -1,3 +1,4 @@
+
 # working as clerk and earning more than 1500
 SELECT * FROM EMP
 WHERE JOB="CLERK" AND SAL>1500;
