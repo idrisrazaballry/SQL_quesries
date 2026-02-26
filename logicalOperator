@@ -15,7 +15,3 @@ SELECT *
 FROM EMP
 WHERE DEPT=30 OR JOB = 'ANALYST';
 
-dfghjkl;'
-ghjk
-jkl
-
