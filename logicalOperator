@@ -27,4 +27,6 @@ FROM EMP
 WHERE (SAL > 1000 AND SAL < 4000) AND ANNUALSAL > 15000;
 
 # Details except the emp working in dept 10 or 20
-
+SELECT * 
+FROM EMP
+WHERE NOT DEPT= 10 OR
