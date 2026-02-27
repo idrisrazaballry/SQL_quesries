@@ -21,4 +21,7 @@ SELECT * FROM EMP
 WHERE JOB ='CLERK' AND JOB='MANAGER' OR JOB='SALESMAN' ;
 
 
-# 
+# Details of emps along with annual salary if sal b/t 1000 and 4000 and annual salary more than 15000
+SELECT ENAME, SAL, SAL*12 AS ANNUALSAL
+FROM EMP
+WHERE (SAL > 1000 AND SAL < 4000) AND ANNUALSAL > 15000;
