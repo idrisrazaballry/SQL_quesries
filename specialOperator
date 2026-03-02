@@ -5,3 +5,8 @@ WHERE ENAME LIKE 'A%';
 # Details of an emp, whos name start with 'A'and ends with 'S'
 SELECT * FROM EMP
 WHERE ENAME LIKE 'A%S';
+
+# Details of an emp, whos name has character 'L' present as 3rd and 4th character
+SELECT * FROM EMP
+WHERE ENAME LIKE '__LL%';
+
