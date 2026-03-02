@@ -1,1 +1,5 @@
+# Details of an emp, whos name start with 'A'
+SELECT * FROM EMP
+WHERE ENAME LIKE 'A%';
+
 
