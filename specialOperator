@@ -10,3 +10,6 @@ WHERE ENAME LIKE 'A%S';
 SELECT * FROM EMP
 WHERE ENAME LIKE '__LL%';
 
+# Details of an emp, whos name has exactly 4 character
+SELECT * FROM EMP
+WHERE ENAME LIKE '____';
