@@ -23,6 +23,9 @@ SELECT ENAME, HIREDATE, SAL
 FROM EMP
 WHERE SAL LIKE '___' AND HIREDATE LIKE '%DEC%';
 
+# Name of an emp who has exactly two 'A' or not more than two 'A' in their name
+SELECT ENAME FROM EMP
+WHERE ENAME LIKE '%A%A%' AND NOT LIKE '%A%A%A%';
 # Name, sal of an emp who earning sal in 4 digits and their name starts with J
 SELECT ENAME, SAL
 FROM EMP
