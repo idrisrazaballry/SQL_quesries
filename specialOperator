@@ -17,3 +17,8 @@ WHERE ENAME LIKE '____';
 # Details of an emp, who is hired during 1982
 SELECT * FROM EMP
 WHERE HIREDATE LIKE '%1982';
+
+# Name, hireDate and sal of of emp who earning sal in 3 digits and hired in december
+SELECT ENAME, HIREDATE, SAL
+FROM EMP
+WHERE SAL LIKE '___' AND HIREDATE LIKE '%DEC%';
