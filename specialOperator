@@ -23,4 +23,7 @@ SELECT ENAME, HIREDATE, SAL
 FROM EMP
 WHERE SAL LIKE '___' AND HIREDATE LIKE '%DEC%';
 
-#
+# Name, sal of an emp who earning sal in 4 digits and their name starts with J
+SELECT ENAME, SAL
+FROM EMP
+WHERE SAL LIKE '____' AND ENAME LIKE 'J%';
