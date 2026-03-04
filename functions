@@ -4,8 +4,11 @@
 SELECT COUNT(*) FROM EMP
 WHERE SAL<2000 AND DEPTNO=20;
 
-
 # Total salary needed to pay to emp working as clerk
 SELECT SUM(SAL)
 FROM EMP
 WHERE JOB='CLERK';
+
+# Average salary needed to pay all emp
+SELECT AVG(SAL)
+FROM EMP;
