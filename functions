@@ -12,3 +12,8 @@ WHERE JOB='CLERK';
 # Average salary needed to pay all emp
 SELECT AVG(SAL)
 FROM EMP;
+
+# Number of emp having 'A' as first letter in their name
+SELECT COUNT(*)
+FROM EMP
+WHERE ENAME LIKE 'A%';
