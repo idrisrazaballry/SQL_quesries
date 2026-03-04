@@ -17,3 +17,8 @@ FROM EMP;
 SELECT COUNT(*)
 FROM EMP
 WHERE ENAME LIKE 'A%';
+
+# Number of emp working as Clerk OR Manager
+SELECT COUNT(*)
+FROM EMP
+WHERE JOB='CLERK' OR JOB='MANAGER';
