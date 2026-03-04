@@ -1,1 +1,5 @@
 # Functions are nothing but which has open and close parahenthesis
+
+# Number of emp getting salary less than 2000 in deptNo 20
+SELECT COUNT(*) FROM EMP
+WHERE SAL<2000 AND DEPTNO=20;
