@@ -3,3 +3,9 @@
 # Number of emp getting salary less than 2000 in deptNo 20
 SELECT COUNT(*) FROM EMP
 WHERE SAL<2000 AND DEPTNO=20;
+
+
+# Total salary needed to pay to emp working as clerk
+SELECT SUM(SAL)
+FROM EMP
+WHERE JOB='CLERK';
