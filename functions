@@ -24,4 +24,5 @@ FROM EMP
 WHERE JOB='CLERK' OR JOB='MANAGER';
 
 # Number of distict salary present in emp
-SELECT
+SELECT COUNT(DISTICT SAL)
+FROM EMP;
