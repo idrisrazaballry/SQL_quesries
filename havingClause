@@ -1,1 +1,7 @@
 # Having clause is used to filter the group and it execute group by group 
+
+# Number of emp working in each dept except President
+SELECT COUNT(*)
+FROM EMP
+WHERE JOB!='PRESIDENT'
+GROUP BY DEPTNO;
