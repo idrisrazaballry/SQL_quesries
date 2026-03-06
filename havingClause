@@ -9,5 +9,7 @@ GROUP BY DEPTNO;
 # Find departments having average salary greater than 50000
 SELECT DEPTNO, AVG(SAL)
 FROM EMP
-WHERE AVG(SAL)>50000
-GROUP BY DEPTNO;
+GROUP BY DEPTNO
+WHERE AVG(SAL)>50000;
+
+# 
