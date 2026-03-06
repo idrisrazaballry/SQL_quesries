@@ -12,4 +12,8 @@ FROM EMP
 GROUP BY DEPTNO
 WHERE AVG(SAL)>50000;
 
-# 
+# Find departments having more than 3 employees
+SELECT DEPT, COUNT(*)
+FROM EMP
+GROUP BY DEPT
+HAVING COUNT(*)>3;
