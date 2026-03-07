@@ -17,3 +17,10 @@ SELECT DEPT, COUNT(*)
 FROM EMP
 GROUP BY DEPT
 HAVING COUNT(*)>3;
+
+# Number of emp having character 'A' in their names
+SELECT COUNT(*) FROM EMP
+WHERE ENAME LIKE '%A%'
+GROUP BY JOB;
+
+# 
