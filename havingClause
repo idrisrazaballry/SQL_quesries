@@ -27,3 +27,9 @@ GROUP BY JOB;
 SELECT MAX(SAL), COUNT(*), JOB
 FROM EMP
 GROUP BY JOB;
+
+# Number of emp hired on same day into same dept
+SELECT COUNT(*), HIREDATE
+FROM EMP
+GROUP BY HIREDATE
+HAVING COUNT(*)>1;
