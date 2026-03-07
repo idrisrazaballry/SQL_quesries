@@ -24,6 +24,6 @@ WHERE ENAME LIKE '%A%'
 GROUP BY JOB;
 
 # Number of emp with maximmum sal in each job
-SELECT MAX(SAL), COUNT(*)
+SELECT MAX(SAL), COUNT(*), JOB
 FROM EMP
 GROUP BY JOB;
