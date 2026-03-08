@@ -52,3 +52,5 @@ FROM EMP
 WHERE JOB='CLERK'
 GROUP BY DEPTNO
 HAVING COUNT(*)>=2;
+
+# Deptno and total sal needed to pay all in each dept if there are atleast 4 emp in each dept
