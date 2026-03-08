@@ -39,3 +39,9 @@ SELECT COUNT(*), ENAME
 FROM EMP
 GROUP BY ENAME
 HAVING COUNT(*)>1;
+
+# Number of emp getting the same sal in same dept and hired on same day
+SELECT SAL, DEPTNO, HIREDATE, COUNT(*)
+FROM EMP
+GROUP BY SAL, DEPTNO, HIREDATE
+HAVING COUNT(*)>1;
