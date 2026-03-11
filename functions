@@ -35,3 +35,5 @@ WHERE JOB='CLERK';
 # Number of jobs present in emp
 SELECT COUNT(DISTINCT JOB)
 FROM EMP;
+
+#
