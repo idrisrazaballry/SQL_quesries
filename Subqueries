@@ -27,3 +27,7 @@ WHERE salary > (
     FROM EMPLOYEE
     WHERE department = e.department
 );
+
+# Name and job of emp working in the same designaation as James
+SELECT ENAME, JOB
+FROM EMP
