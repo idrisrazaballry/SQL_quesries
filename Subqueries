@@ -64,3 +64,6 @@ WHERE HIREDATE > ALL (SELECT HIREDATE FROM EMP
 SELECT * FROM EMP
 WHERE JOB='CLERK' AND HIREDATE < ANY (SELECT HIREDATE FROM EMP
                                       WHERE JOB='SALESMAN');
+
+# Details of emp working in accounting or sales dept
+SELECT
