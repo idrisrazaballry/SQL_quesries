@@ -46,3 +46,9 @@ SELECT ENAME, SAL
 FROM EMP
 WHERE SAL < ANY (SELECT SAL FROM EMP
                  WHERE JOB='MANAGER');
+
+# Name and hiredate of emp hired before all the manager
+SELECT ENAME, HIREDATE
+FROM EMP
+WHERE HIREDATE < ALL(SELECT HIREDATE FROM EMP
+                     WHERE JOB='MANAGER');
