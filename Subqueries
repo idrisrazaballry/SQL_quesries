@@ -66,4 +66,6 @@ WHERE JOB='CLERK' AND HIREDATE < ANY (SELECT HIREDATE FROM EMP
                                       WHERE JOB='SALESMAN');
 
 # Details of emp working in accounting or sales dept
-SELECT
+SELECT * FROM EMP
+WHERE DEPTNO IN (SELECT DEPTNO FROM EMP
+                 WHERE DNAME IN ('ACCOUNTING','SALES'));
