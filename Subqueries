@@ -84,3 +84,5 @@ WHERE DEPTNO IN (SELECT DEPTNO FROM DEPT
 SELECT ENAME FROM EMP
 WHERE HIREDATE > ALL (SELECT HIREDATE FROM EMP
                        WHERE DEPTNO=10);
+
+# Names of emp earning sal more than salesman
