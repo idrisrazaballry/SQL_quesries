@@ -39,3 +39,10 @@ SELECT ENAME, EMPNO, SAL*12 AS ANNUALSAL
 FROM EMP
 WHERE SAL*12 > (SELECT SAL*12 FROM EMP
                 WHERE ENAME='WORDS');
+
+__Multi-row Subquery__
+# Name and salary for all emp if they are earning less than atleast manager
+SELECT ENAME, SAL
+FROM EMP
+WHERE SAL < ANY (SELECT SAL FROM EMP
+                 WHERE JOB='MANAGER');
