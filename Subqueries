@@ -89,3 +89,9 @@ WHERE HIREDATE > ALL (SELECT HIREDATE FROM EMP
 SELECT ENAME FROM EMP
 WHERE SAL > ANY (SELECT SAL FROM EMP
                  WHERE JOB='SALESMAN');
+
+dfghjkl;'
+;lkjkl;'
+';lkl;'
+';lkl;'
+';l;'
