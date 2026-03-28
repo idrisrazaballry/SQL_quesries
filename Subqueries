@@ -90,5 +90,4 @@ SELECT ENAME FROM EMP
 WHERE SAL > ANY (SELECT SAL FROM EMP
                  WHERE JOB='SALESMAN');
 
-dfghjkl;'
-;lk
+dfghjkl;
