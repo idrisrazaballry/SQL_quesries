@@ -92,6 +92,4 @@ WHERE SAL > ANY (SELECT SAL FROM EMP
 
 dfghjkl;'
 ;lkjkl;'
-';lkl;'
-';lkl;'
-';l;'
+';
