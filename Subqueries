@@ -91,5 +91,4 @@ WHERE SAL > ANY (SELECT SAL FROM EMP
                  WHERE JOB='SALESMAN');
 
 dfghjkl;'
-;lkjkl;'
-';
+;lk
