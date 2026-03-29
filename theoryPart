@@ -9,3 +9,6 @@ Here:
 ID, Name, Age, Email = Attributes
 
 🔹 Types of Attributes
+1. Simple (Atomic) Attribute
+Cannot be divided further
+Example: Age, Salary
