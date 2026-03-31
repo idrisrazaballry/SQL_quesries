@@ -125,4 +125,9 @@ FROM EMP
 WHERE SAL > ANY (SELECT SAL FROM EMP
                  WHERE JOB='MANAGER');
 
-#
+# Names of emp hired afer all the manager and earning sal more than all the clerk
+SELECT ENAME, HIREDATE
+FROM EMP
+WHERE HIREDATE> ALL(SELECT HIREDTAE FROM EMP
+                    WHERE JOB='MANAGER') AND SAL >ALL(SELECT SAL FROM EMP
+                                                    WHERE JOB='CLERK');
