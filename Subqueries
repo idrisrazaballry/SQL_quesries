@@ -103,3 +103,13 @@ FROM EMP
 WHERE HIREDATE<(SELECT HIREDATE FROM EMP
                  WHERE ENAME='KING') AND DEPTNO=(SELECT DEPTNO FROM DEPT
                                                  WHERE DANAME='OPERATION');
+
+# Display all emp whose dept names ending 'S'
+SELECT * FROM EMP
+WHERE DEPTNO = (SELECT DEPTNO FROM DEPT
+                WHERE DNAME LIKE '%S');
+
+# Dname of emp whose names has character 'A' in it
+SELECT DNAME FROM DEPT
+WHERE DEPTNO=(SELECT DEPTNO FROM EMP
+              WHERE ENAME LIKE '%A%');
