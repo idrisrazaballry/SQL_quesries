@@ -89,3 +89,17 @@ WHERE HIREDATE > ALL (SELECT HIREDATE FROM EMP
 SELECT ENAME FROM EMP
 WHERE SAL > ANY (SELECT SAL FROM EMP
                  WHERE JOB='SALESMAN');
+
+# Name and sal of emp earning more than KING and in dept Accounting
+SELECT ENAME, SAL
+FROM EMP
+WHERE SAL>(SELECT SAL FROM EMP
+           WHERE ENAME='KING') AND DEPTNO=(SELECT DEPTNO FROM DEPT
+                                        WHERE DNAME='ACCOUNTING');
+
+# Name, sal, job, hiredate of emp working in Operation dept and hired before King
+SELECT ENAME, SAL, JOB, HIREDATE
+FROM EMP
+WHERE HIREDATE<(SELECT HIREDATE FROM EMP
+                 WHERE ENAME='KING') AND DEPTNO=(SELECT DEPTNO FROM DEPT
+                                                 WHERE DANAME='OPERATION');
