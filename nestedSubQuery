@@ -1,1 +1,6 @@
-
+# Name, sal from emp whose is getting 3rd minimum sal
+SELECT ENAME, SAL
+FROM EMP
+WHERE SAL=(SELECT MIN(SAL) FROM EMP
+           WHERE SAL >(SELECT MIN(SAL) FROM EMP
+                       WHERE SAL >(SELECT MIN(SAL) FROM EMP)));
