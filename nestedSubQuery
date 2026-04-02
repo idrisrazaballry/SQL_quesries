@@ -4,3 +4,8 @@ FROM EMP
 WHERE SAL=(SELECT MIN(SAL) FROM EMP
            WHERE SAL >(SELECT MIN(SAL) FROM EMP
                        WHERE SAL >(SELECT MIN(SAL) FROM EMP)));
+
+# Name, hiredate of emp hired at first
+SELECT ENAME FROM EMP
+WHERE HIREDATE=(SELECT MIN(HIREDATE)
+                FROM EMP);
