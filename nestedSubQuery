@@ -17,5 +17,11 @@ WHERE HIREDATE=(SELECT MIN(HIREDATE)
 
 # Details of emp earning least annual salary
 SELECT * FROM EMP
-WHERE SAL=(SELECT MIN(SAL)
+WHERE SAL=(SELECT MIN(SAL*12)
            FROM EMP);
+
+# Name, annual sal of emp if their annual sal is more than all salesman
+SELECT ENAME, SAL, SAL*12 AS ANNUALSAL
+FROM EMP
+WHERE SAL=(SELECT MIN(SAL*12) FROM EMP
+           WHERE JOB="SALESMAN");
