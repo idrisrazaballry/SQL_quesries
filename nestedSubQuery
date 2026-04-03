@@ -15,3 +15,7 @@ SELECT ENAME FROM EMP
 WHERE HIREDATE=(SELECT MIN(HIREDATE)
                 FROM EMP);
 
+# Details of emp earning least annual salary
+SELECT * FROM EMP
+WHERE SAL=(SELECT MIN(SAL)
+           FROM EMP);
