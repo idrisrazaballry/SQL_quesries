@@ -44,3 +44,8 @@ WHERE DEPTNO=(SELECT DEPTNO FROM EMP
                          WHERE SAL <(SELECT MAX(SAL) FROM EMP
                                      WHERE SAL <(SELECT MAX(SAL) FROM EMP
                                                  WHERE SAL <(SELECT MAX(SAL) FROM EMP)))));
+
+# Details of emp who has hired 2nd
+SELECT * FROM EMP
+WHERE HIREDATE=(SELECT MIN(HIREDATE) FROM EMP
+                WHERE HIREDATE < (SELECT HIREDATE FROM EMP)); 
