@@ -37,3 +37,10 @@ WHERE SAL<(SELECT MAX(SAL) FROM EMP
                       WHERE SAL<(SELECT MAX(SAL) FROM EMP
                                  WHERE SAL <(SELECT MAX(SAL) FROM EMP))));
 
+# Dname of emp getting 4th max salary
+SELECT DNAME FROM DEPT
+WHERE DEPTNO=(SELECT DEPTNO FROM EMP
+              WHERE SAL=(SELECT MAX(SAL) FROM EMP
+                         WHERE SAL <(SELECT MAX(SAL) FROM EMP
+                                     WHERE SAL <(SELECT MAX(SAL) FROM EMP
+                                                 WHERE SAL <(SELECT MAX(SAL) FROM EMP)))));
