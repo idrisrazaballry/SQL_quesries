@@ -59,3 +59,13 @@ WHERE HIREATE=(SELECT MAX(HIREDATE) FROM EMP
 SELECT LOC FROM DEPT
 WHERE DEPTNO=(SELECT DEPTNO FROM EMP
               WHERE HIREDATE=(SELECT MIN(HIREDATE) FROM EMP));
+
+# Details of emp earning 7th max sal
+SELECT * FROM EMP
+WEHRE SAL=(SELECT MAX(SAL) FROM EMP
+           WHERE SAL <(SELECT MAX(SAL) FROM EMP
+                       WHERE SAL <(SELECT MAX(SAL) FROM EMP
+                                   WHERE SAL <(SELECT MAX(SAL) FROM EMP
+                                               WHERE SAL <(SELECT MAX(SAL) FROM EMP
+                                                            WHERE SAL <(SELECT MAX(SAL) FROM EMP
+                                                                        WHERE SAL <(SELECT MAX(SAL) FROM EMP)))))));
