@@ -104,3 +104,8 @@ WHERE DEPTNO=(SELECT DEPTNO FROM EMP
               WHERE EMPNO=(SELECT MGR FROM EMP
                            WHERE EMPNO=(SELECT MGR FROM EMP
                                         WHERE ENAME='SMITHS')));
+
+# Name of emp reporting to Blake
+SELECT ENAME FROM EMP
+WHERE MGR=(SELECT EMPNO FROM EMP
+           WHERE ENAME='BLAKE');
