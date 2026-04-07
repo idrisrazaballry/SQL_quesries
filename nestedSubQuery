@@ -132,3 +132,9 @@ SELECT COUNT(*) FROM EMP
 WHERE MGR=(SELECT EMPNO FROM EMP
            WHERE EMPNO=(SELECT MGR FROM EMP
                         WHERE ENAME='BLAKE'));
+
+# Dname in which there are atleast 5 emp working
+SELECT DNAME FROM DEPT
+WHERE DEPTNO IN (SELECT DEPTNO FROM EMP
+                 GROUP BY DEPTNO
+                 HAVING COUNT(*)>1);
