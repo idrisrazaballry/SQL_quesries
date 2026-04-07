@@ -139,3 +139,8 @@ WHERE DEPTNO IN (SELECT DEPTNO FROM EMP
                  GROUP BY DEPTNO
                  HAVING COUNT(*)>1);
 
+# Loc in which there are exactly 3 emp working
+SELECT LOC FROM DEPT
+WHERE DEPTNO IN (SELECT DEPTNO FROM EMP
+                 GROUP BY DEPTNO
+                 HAVING COUNT(*)=3);
