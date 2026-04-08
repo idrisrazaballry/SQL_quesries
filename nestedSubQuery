@@ -174,3 +174,9 @@ SELECT ENAME, SAL FROM EMP
 WHERE ENAME IN (SELECT ENAME FROM EMP
                 GROUP BY ENAME
                 HAVING COUNT(*)>=4);
+
+# Details of emp having same designation in same dept
+SELECT * FROM EMP
+WHERE (JOB, DEPTNO) IN (SELECT JOB, DEPTNO FROM EMP
+                        GROUP BY JOB, DEPTNO
+                         HAVING COUNT(*)>1);
