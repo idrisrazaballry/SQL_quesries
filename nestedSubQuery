@@ -144,3 +144,9 @@ SELECT LOC FROM DEPT
 WHERE DEPTNO IN (SELECT DEPTNO FROM EMP
                  GROUP BY DEPTNO
                  HAVING COUNT(*)=3);
+
+# Details of emp earning same salary
+SELECT * FROM EMP
+WHERE SAL=(SELECT SAL FROM EMP
+           GROUP BY SAL
+           HAVING COUNT(*)>1);
