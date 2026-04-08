@@ -162,3 +162,9 @@ SELECT * FROM EMP
 WHERE (SAL, DEPTNO) IN (SELECT SAL, DEPTNO FROM EMP
                         GROUP BY SAL, DEPTNO
                          HAVING COUNT(*)>1);
+
+# Details of emp hired on same day into same dept
+SELECT * FROM EMP
+WHERE (HIREDATE, DEPTNO) IN (SELECT HIREDATE, DEPTNO FROM EMP
+                             GROUP BY HIREDATE, DEPTNO
+                             HAVING COUNT(*)>1);
