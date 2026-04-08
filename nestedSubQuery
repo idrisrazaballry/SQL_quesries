@@ -150,3 +150,9 @@ SELECT * FROM EMP
 WHERE SAL=(SELECT SAL FROM EMP
            GROUP BY SAL
            HAVING COUNT(*)>1);
+
+# Salaries emp having same names
+SELECT SAL FROM EMP
+WHERE ENAME=(SELECT ENAME FROM EMP
+             GROUP BY ENAME
+             HAVING COUNT(*)>1);
