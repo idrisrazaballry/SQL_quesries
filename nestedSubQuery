@@ -168,3 +168,9 @@ SELECT * FROM EMP
 WHERE (HIREDATE, DEPTNO) IN (SELECT HIREDATE, DEPTNO FROM EMP
                              GROUP BY HIREDATE, DEPTNO
                              HAVING COUNT(*)>1);
+
+# Name and sal of emp if their name is repeated atleast 4 times in emp table
+SELECT ENAME, SAL FROM EMP
+WHERE ENAME IN (SELECT ENAME FROM EMP
+                GROUP BY ENAME
+                HAVING COUNT(*)>=4);
