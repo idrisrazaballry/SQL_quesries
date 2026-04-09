@@ -13,3 +13,8 @@
 E.g.,
 SELECT ROWID, EMP.*
 FROM EMP;
+
+2. RowNum
+* RowNum is used to assign serial number at the time of execution
+* It is dynamic
+* RowNum is started with 1 and get incremented by one (1)
