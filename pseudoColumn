@@ -18,3 +18,6 @@ FROM EMP;
 * RowNum is used to assign serial number at the time of execution
 * It is dynamic
 * RowNum is started with 1 and get incremented by one (1)
+E.g.,
+SELECT ROWNUM, EMP.*
+FROM EMP;
