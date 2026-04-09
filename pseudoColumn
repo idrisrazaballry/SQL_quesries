@@ -5,3 +5,7 @@
 
 1. RowId
 * RowId is 18 digits hexadecimal number
+* It is static
+* We can't modify or update or delete the RowId
+* RowId is created at the time of insertion
+* We can access the records using RowId very fast
