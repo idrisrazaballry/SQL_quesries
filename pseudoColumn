@@ -1,3 +1,7 @@
 # Pseudo column is false column which is presented in each and every table, but we have to call it explicitly
+# We have two types of pseudo column and they are
+1. RowId
+2. RowNum
 
-
+1. RowId
+* RowId is 18 digits hexadecimal number
