@@ -21,3 +21,9 @@ FROM EMP;
 E.g.,
 SELECT ROWNUM, EMP.*
 FROM EMP;
+
+# First half record from emp table
+SELECT * FROM (SELECT ROWNUM AS SLNO, EMP.*
+               FROM EMP)
+WHERE SLNO<=(SELECT COUNT(*)/2 FROM EMP);
+
