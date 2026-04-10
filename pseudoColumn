@@ -39,3 +39,11 @@ FROM (SELECT ROWNUM AS SLNO, SAL
              FROM EMP
              ORDER BY SAL DESC))
 WHERE SLNO=3;
+
+# Details of emp earning 3rd max sal
+SELECT * FROM(
+               SELECT ROWNUM AS SLNO, SAL
+               FROM(SELECT DISTINCT SAL
+                    FROM EMP
+                    ORDER BY SAL))
+WHERE SLNO=3;
