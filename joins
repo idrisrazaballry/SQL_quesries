@@ -5,3 +5,7 @@
 Syntax
 SELECT *
 FROM TB1, TB2;
+
+E.g.,
+SELECT *
+FROM EMP, DEPT;
