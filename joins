@@ -1,2 +1,7 @@
 # Joins is used to retrieve the data from multiple tables
 
+1. Cartision join
+--> It is used to merge all the records from table1 to table2
+Syntax
+SELECT *
+FROM TB1, TB2;
