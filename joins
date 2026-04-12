@@ -9,3 +9,14 @@ FROM TB1, TB2;
 E.g.,
 SELECT *
 FROM EMP, DEPT;
+
+2. Inner join/Equi join
+--> It is used to give matching records from both tables.
+Syntax:
+SELECT *
+FROM TB1,TB2
+WHERE <condition>
+
+E.g.,
+SELECT * FROM EMP,DEPT
+WHERE EMP.DEPTNO=DEPT.DEPTNO;
