@@ -79,3 +79,19 @@ It has two behaviour
 Syntax:
 SELECT *
 FROM TB1 NATURAL JOIN TB2;
+
+E.g., 
+SELECT *
+FROM EMP NATURAL JOIN DEPT;
+__________________________________________________________________________________________________________________
+
+**** Outer Join ****
+It will give matching records along with unmatching records.
+
+Syntax:
+SELECT *
+FROM TB1 OUTER JOIN TAB2;
+
+E.g.,
+SELECT *
+FROM EMP OUTER JOIN DEPT;
