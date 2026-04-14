@@ -107,3 +107,20 @@ WHERE <join condition>       (EMP.DEPTNO=DEPT.DEPTNO(+))
 
 E.g.,
 SELECT *
+FROM EMP, DEPT
+WHERE EMP.DEPTNO=DEPT.DEPTNO(+);
+_____________________________________________________________________________________________________________________
+
+**** Right Outer Join ****
+It will give matching records along with unmatching from right table.
+
+Syntax:
+SELECT *
+FROM TB1, TB2
+WHERE <join condition>       (EMP.DEPTNO(+)=DEPT.DEPTNO)
+
+E.g.,
+SELECT *
+FROM EMP, DEPT
+WHERE EMP.DEPTNO(+)=DEPT.DEPTNO;
+___________________________________________________________________________________________________________________
