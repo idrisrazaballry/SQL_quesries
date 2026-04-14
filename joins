@@ -95,3 +95,15 @@ FROM TB1 OUTER JOIN TAB2;
 E.g.,
 SELECT *
 FROM EMP OUTER JOIN DEPT;
+_____________________________________________________________________________________________________________________
+
+*** Left Outer Join ***
+It will give matching records along with unmatching from left table.
+
+Syntax:
+SELECT *
+FROM TB1, TB2
+WHERE <join condition>       (EMP.DEPTNO=DEPT.DEPTNO(+))
+
+E.g.,
+SELECT *
