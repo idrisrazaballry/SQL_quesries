@@ -15,7 +15,7 @@ FROM EMP, DEPT;
 Syntax:
 SELECT *
 FROM TB1,TB2
-WHERE <condition>;
+WHERE <condition>
 
 E.g.,
 SELECT * FROM EMP,DEPT
