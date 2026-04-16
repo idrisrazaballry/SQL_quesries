@@ -1,14 +1,1 @@
-__Attributes in DBMS__
 
-An attribute is a property or column of a table in a database.
-
-Example:
-Student(ID, Name, Age, Email)
-
-Here:
-ID, Name, Age, Email = Attributes
-
-🔹 Types of Attributes
-1. Simple (Atomic) Attribute
-Cannot be divided further
-Example: Age, Salary
