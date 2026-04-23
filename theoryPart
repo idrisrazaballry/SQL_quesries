@@ -8,3 +8,17 @@ Composite Key Attribute: A combination of two or more non-key attributes used fo
 Super Key Attribute: The set of all possible key attributes.
 Foreign Key Attribute: An attribute that represents a relationship by behaving as an attribute of another entity (e.g., Dno).
 
+Functional Dependency (FD)
+A functional dependency exists when one attribute in a relation determines another attribute. It is categorized into three types:
+1. Total Functional Dependency (TFD)
+Occurs when all attributes in a relation are dependent on a single key attribute.
+Example: In EMP - (EID, ENAME, SAL, DOB), if EID determines all other fields, it is a TFD.
+Impact: No redundancy or anomalies.
+2. Partial Functional Dependency
+Occurs when an attribute is uniquely determined by only a part of a composite key.
+Example: If (PHONE_NO, MAIL_ID) is a composite key, but PHONE_NO alone determines CNAME, it is a partial dependency.
+Impact: Redundancy and anomalies are present.
+3. Transitive Functional Dependency
+Occurs when a non-key attribute is determined by another non-key attribute, which is in turn determined by a key attribute.
+Example: CID -> PINCODE and PINCODE -> STATE. Here, STATE is transitively dependent on CID.
+Impact: Redundancy and anomalies are present.
