@@ -1,1 +1,10 @@
+** Attributes in SQL**
+Attributes are the properties that define an entity. The document classifies them into seven categories:
+Key Attribute / Candidate Key: Used to uniquely identify a record (e.g., Phone_No, Aadhar).
+Non-key Attribute: Attributes that are not key attributes (e.g., Name, Age).
+Prime Key Attribute: The main attribute chosen from key attributes to uniquely identify a record (e.g., Phone_No).
+Non-prime Key Attribute: All key attributes other than the Prime key.
+Composite Key Attribute: A combination of two or more non-key attributes used for unique identification when no single key attribute exists (e.g., (name, age, dob, address)).
+Super Key Attribute: The set of all possible key attributes.
+Foreign Key Attribute: An attribute that represents a relationship by behaving as an attribute of another entity (e.g., Dno).
 
