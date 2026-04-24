@@ -25,9 +25,9 @@ It is categorized into three types:
             Impact: Redundancy and anomalies are present.
 
 3. Transitive Functional Dependency
-Occurs when a non-key attribute is determined by another non-key attribute, which is in turn determined by a key attribute.
-Example: CID -> PINCODE and PINCODE -> STATE. Here, STATE is transitively dependent on CID.
-Impact: Redundancy and anomalies are present.
+            Occurs when a non-key attribute is determined by another non-key attribute, which is in turn determined by a key attribute.
+            Example: CID -> PINCODE and PINCODE -> STATE. Here, STATE is transitively dependent on CID.
+            Impact: Redundancy and anomalies are present.
 
 Data Integrity Concepts
 Redundancy: The repetition of unwanted data.
