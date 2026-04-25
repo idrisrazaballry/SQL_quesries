@@ -38,3 +38,6 @@ Data Integrity Concepts
 * Decomposed:
             R1: (CID, CNAME, PINCODE) — where PINCODE acts as a Foreign Key.
             R2: (PINCODE, CITY, STATE) — to store location details without repetition.
+
+**Normalization**
+Normalization is a systematic process in database design that organizes data into tables to reduce redundancy and improve data integrity. 
