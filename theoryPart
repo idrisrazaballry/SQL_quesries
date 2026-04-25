@@ -30,11 +30,11 @@ It is categorized into three types:
             Impact: Redundancy and anomalies are present.
 
 Data Integrity Concepts
-Redundancy: The repetition of unwanted data.
-Anomaly: Side effects (errors or inconsistencies) caused during DML operations (Insert, Update, Delete).
-Normalization Example
-The document illustrates resolving a Transitive Dependency by splitting a table into two:
-Original: Customer: (cid, cname, pincode, city, state)
-Decomposed:
+* Redundancy: The repetition of unwanted data.
+* Anomaly: Side effects (errors or inconsistencies) caused during DML operations (Insert, Update, Delete).
+* Normalization Example
+* The document illustrates resolving a Transitive Dependency by splitting a table into two:
+* Original: Customer: (cid, cname, pincode, city, state)
+* Decomposed:
 R1: (CID, CNAME, PINCODE) — where PINCODE acts as a Foreign Key.
 R2: (PINCODE, CITY, STATE) — to store location details without repetition.
