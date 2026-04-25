@@ -36,5 +36,5 @@ Data Integrity Concepts
 * The document illustrates resolving a Transitive Dependency by splitting a table into two:
 * Original: Customer: (cid, cname, pincode, city, state)
 * Decomposed:
-R1: (CID, CNAME, PINCODE) — where PINCODE acts as a Foreign Key.
-R2: (PINCODE, CITY, STATE) — to store location details without repetition.
+            R1: (CID, CNAME, PINCODE) — where PINCODE acts as a Foreign Key.
+            R2: (PINCODE, CITY, STATE) — to store location details without repetition.
