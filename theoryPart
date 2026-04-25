@@ -41,3 +41,4 @@ Data Integrity Concepts
 
 **Normalization**
 Normalization is a systematic process in database design that organizes data into tables to reduce redundancy and improve data integrity. 
+By breaking large, complex tables into smaller, logically related ones, it ensures that each piece of information is stored in only one place.
