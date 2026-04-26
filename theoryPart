@@ -50,6 +50,3 @@ Insertion Anomaly: Being unable to add a new record because certain required fie
 Update Anomaly: Having to update multiple rows to change a single piece of information, which risks data inconsistency if any row is missed.
 Deletion Anomaly: Accidentally losing important data when deleting a different record.
 Improve Integrity: Ensure data dependencies are logical so that data remains accurate and reliable. 
-GeeksforGeeks
-GeeksforGeeks
- +
