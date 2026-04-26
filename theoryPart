@@ -45,8 +45,8 @@ By breaking large, complex tables into smaller, logically related ones, it ensur
 
 **The Core Objectives**
 1. Eliminate Redundancy: Avoid storing the same data in multiple places to save storage and prevent inconsistencies.
-Prevent Anomalies:
-Insertion Anomaly: Being unable to add a new record because certain required fields are currently missing.
-Update Anomaly: Having to update multiple rows to change a single piece of information, which risks data inconsistency if any row is missed.
-Deletion Anomaly: Accidentally losing important data when deleting a different record.
-Improve Integrity: Ensure data dependencies are logical so that data remains accurate and reliable. 
+2. Prevent Anomalies:
+            * Insertion Anomaly: Being unable to add a new record because certain required fields are currently missing.
+            * Update Anomaly: Having to update multiple rows to change a single piece of information, which risks data inconsistency if any row is missed.
+            * Deletion Anomaly: Accidentally losing important data when deleting a different record.
+3. Improve Integrity: Ensure data dependencies are logical so that data remains accurate and reliable. 
