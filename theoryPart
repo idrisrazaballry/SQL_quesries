@@ -58,4 +58,4 @@ Normalization is applied in progressive steps called Normal Forms (NF). Each lev
 2. 2NF (Second) --> Must be in 1NF and have no partial dependencies. Every non-key attribute must depend on the entire primary key.	Its goal is to Eliminate data repeating for composite keys.
 3. 3NF (Third)  --> Must be in 2NF and have no transitive dependencies. Non-key attributes must not depend on other non-key attributes. Its goal is most common target for standard apps.
 4. BCNF	    --> A stricter version of 3NF where every determinant must be a candidate key. It handles rare multi-candidate key issues.
-4NF & 5NF	    --> It deals with multi-valued dependencies and complex join dependencies.	Rare niche cases.
+5. 4NF & 5NF    --> It deals with multi-valued dependencies and complex join dependencies. Rare niche cases.
