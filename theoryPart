@@ -50,3 +50,6 @@ By breaking large, complex tables into smaller, logically related ones, it ensur
             * Update Anomaly: Having to update multiple rows to change a single piece of information, which risks data inconsistency if any row is missed.
             * Deletion Anomaly: Accidentally losing important data when deleting a different record.
 3. Improve Integrity: Ensure data dependencies are logical so that data remains accurate and reliable. 
+
+**Common Normal Forms (Stages)**
+Normalization is applied in progressive steps called Normal Forms (NF). Each level must satisfy the requirements of the previous one.
