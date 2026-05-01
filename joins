@@ -124,4 +124,9 @@ SELECT *
 FROM EMP, DEPT
 WHERE EMP.DEPTNO(+)=DEPT.DEPTNO;
 ___________________________________________________________________________________________________________________
+*** Self Join ***
+Joining same multiple table is called self join.
 
+Syntax(oracle)
+SELECT * FROM TN1,TN2
+WHERE <join condition>
