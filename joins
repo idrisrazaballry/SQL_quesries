@@ -130,3 +130,9 @@ Joining same multiple table is called self join.
 Syntax(oracle)
 SELECT * FROM TN1,TN2
 WHERE <join condition>
+
+E.g.,
+SELECT E1.ENAME, E2.ENAME
+FROM EMP E1, EMP E2
+WHERE E1.MGR=E2.EID;
+__________________________________________________________________________________________________________________
