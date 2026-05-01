@@ -136,3 +136,9 @@ SELECT E1.ENAME, E2.ENAME
 FROM EMP E1, EMP E2
 WHERE E1.MGR=E2.EID;
 __________________________________________________________________________________________________________________
+
+"Some Problems on Join"
+# Ename of emp and manager, if emp is working as clerk
+SELECT E1.ENAME, E2.ENAME
+FROM EMP E1, EMP E2
+WHERE E1.JOB='CLERK' AND E1.MGR=E2.EID;
