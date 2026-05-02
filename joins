@@ -142,3 +142,5 @@ ________________________________________________________________________________
 SELECT E1.ENAME, E2.ENAME
 FROM EMP E1, EMP E2
 WHERE E1.JOB='CLERK' AND E1.MGR=E2.EID;
+
+#  
