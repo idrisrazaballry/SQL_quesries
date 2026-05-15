@@ -181,6 +181,4 @@ WHERE E1.MGR=E2.EID AND E1.DEPTNO=D1.DEPTNO AND E2.DEPTNO=D2.DEPTNO;
 vbnm,./
 ';lkjhkl;'
 ';lkjkl;'
-';lkjl;'
-';lkjkl;'
 ';l
