@@ -131,3 +131,9 @@ FROM EMP
 WHERE HIREDATE> ALL(SELECT HIREDTAE FROM EMP
                     WHERE JOB='MANAGER') AND SAL >ALL(SELECT SAL FROM EMP
                                                     WHERE JOB='CLERK');
+
+dfhjkl;'
+';lkjhkl;'
+';lkjkl;'
+';lkjkl;'
+';lkjhjkl;'
