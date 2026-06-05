@@ -134,6 +134,4 @@ WHERE HIREDATE> ALL(SELECT HIREDTAE FROM EMP
 
 dfhjkl;'
 ';lkjhkl;'
-';lkjkl;'
-';lkjkl;'
-';lkjhjkl;'
+';lkj
